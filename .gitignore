@@ -1,41 +1,86 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
-node_modules/
-
-# Expo
+# Expo / React Native
 .expo/
-dist/
-web-build/
-expo-env.d.ts
-
-# Native
-.kotlin/
-*.orig.*
+eas.json
+metro.config.js.cache
+*.expo.js
 *.jks
-*.p8
+*.keystore
 *.p12
-*.key
+*.pem
 *.mobileprovision
 
-# Metro
-.metro-health-check*
+# iOS
+ios/.generated/
+ios/build/
+ios/Pods/
+ios/Podfile.lock
+ios/*.xcworkspace/
+ios/*.xcodeproj/project.xcworkspace/
+ios/*.xcodeproj/xcshareddata/
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+android/*.keystore
+android/*.jks
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
 
 # macOS
 .DS_Store
-*.pem
+.AppleDouble
+.LSOverride
+._*
 
-# local env files
-.env*.local
+# Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
 
-# typescript
-*.tsbuildinfo
+# Logs / temp
+*.log
+*.pid
+*.seed
+*.tmp
+*.temp
 
-# generated native folders
-/ios
-/android
+# AI / placeholder pollution
+*claude*
+*CLAUDE*
+*QWEN*
+*todo*
+*todos*
+*.haiku
+*placeholder*
+*validation*
+*structure*
+*prompt*.txt
+*new-resonse.txt*
+*json elements*
+*logic implementation*
+*analyze*
+*Warping*
+*Flashcards demo*
+*Custom hooks*
+*Environment config*
+*Error boundry*
+*Offline support*
+*Performance monitor*
+*Register*
+*Safe local*
+*Update json*
+*implement react*
+*plc*
+*schema*
+*schema analysis*
+
+# Misc
+Thumbs.db
+ehthumbs.db
