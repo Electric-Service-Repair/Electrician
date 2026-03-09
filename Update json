@@ -1,7 +1,0 @@
-{
-  "scripts": {
-    "build": "react-scripts build",
-    "build:analyze": "source-map-explorer 'build/static/js/*.js'",
-    "test:coverage": "react-scripts test --coverage --watchAll=false"
-  }
-}
