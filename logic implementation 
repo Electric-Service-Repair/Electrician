@@ -1,8 +1,0 @@
-(* Motor Control Logic *)
-// The motor runs if (Start is pressed OR already running) AND Stop is NOT pressed AND Overload is NOT tripped.
-// Note: STOP and OVERLOAD are physical NC, so 'TRUE' means 'OK'.
-Motor_Contactor := (Start_Btn OR Motor_Contactor) AND Stop_Btn AND Overload_Sensor;
-
-// Output mapping
-Run_Indicator := Motor_Contactor;
-Fault_Indicator := NOT Overload_Sensor;
